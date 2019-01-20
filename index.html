@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<style>
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
+ 
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+/* started off with blurred background from w3 schools.  great site */
+.backimage {
+  /* image(1) */
+  background-image: url("image(3).jpg");
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  
+  height: 100%; 
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centeredcard {
+  background-color: rgba(255, 255, 255, .7);
+  
+  border-radius: 5%;
+  /* positioning */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  
+  /* padding */
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  /*
+  display: flex;
+  align-items:center;
+  */
+  justify-content: center;
+  display: block;
+  
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+  
+  /* clip-path: ellipse(60px 40px at 75px 30px); */
+}
+
+.avatarimg {
+  border-radius: 100%;
+  width: 110px;
+  height: 110px;
+  
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.sidecardleft {
+  position: relative;
+  white-space:nowrap;
+  /* float: left; */
+}
+
+.sidecardright {
+  position: relative;
+  white-space:nowrap;
+  /*
+  float: right;
+  top: 50%;
+  right: 0%; */
+  
+}
+
+.h1, h2 {
+  font-family: 'Montserrat';
+  /* font-weight: lighter; */
+  
+  font-stretch: condensed;
+  white-space:nowrap;
+  
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  
+  text-transform: uppercase;
+  
+  letter-spacing: 3px;
+}
+
+.h3 {
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  
+  font-stretch: condensed;
+  white-space:nowrap;
+  
+  padding-bottom: 6%;
+  text-transform: uppercase;
+  
+  letter-spacing: 2px;
+}
+
+
+
+.buttons {
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  font-stretch: condensed;
+  transition: 0.5s;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: rgb(105,105,105);
+  margin-top: 2%;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  white-space:nowrap;
+}
+
+.buttons:hover {
+  color: #1464F4; /* rgb(200,0,150,1); */
+  /* font-weight: bold; */
+}
+
+/* 
+
+Animation Stuff
+
+*/
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="backimage"></div>
+<div class="centeredcard">
+    <div class="sidecardleft">
+      <center>
+        <img class="avatarimg" src="school_picture.jpg" alt="Yes this is my ninth grade yearbook photo. For reference I'm in 11th grade">
+      </center>
+    </div>
+    <div class="sidecardright">
+      <center>
+      <h1 class='h1'>Charlie Fligg</h1>
+      <h3 class='h3'>Software Developer</h3>
+      </center>
+    </div>
+  
+    <center>
+      <a href="ContactPage.html" class="buttons">&nbsp;Contact Me&nbsp;</a>
+      
+      <a href="https://github.com/auto19" class="buttons">&nbsp;Projects&nbsp;</a>
+      
+      <a href="TODO.html" class="buttons">&nbsp;TODO List&nbsp;</a>
+    
+    </center>
+    
+</div>
+
+
+</body></html>
